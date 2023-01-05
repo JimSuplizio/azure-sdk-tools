@@ -24,7 +24,7 @@ jobs:
       - name: Check if needs-triage needs to be added/removed from an issue
         run: |
           echo "$($env:GITHUB_PAYLOAD)"
-	    pwd
+          pwd
         shell: pwsh
         # The with is only necessary if you're calling an external action from a different repo
         # for example - uses: azure/azure-sdk-actions@main would require a with
