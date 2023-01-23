@@ -2,11 +2,11 @@ name: Add/Remove needs-triage
 
 on:
   issues:
-    types: [opened, labeled, unlabeled]
+    types: [edited, labeled, opened, reopened, unlabeled]
   issue_comment:
     types: [created]
   pull_request_target:
-    types: [opened, labeled, synchronize, unlabeled]
+    types: [closed, labeled, opened, reopened, review_requested, synchronize, unlabeled]
   pull_request_review:
     types: [submitted]
 
