@@ -16,7 +16,7 @@ jobs:
   event-handler:
     permissions:
       issues: write # to set status (azure/azure-sdk-actions)
-      pull-requests: write # Might not need this, look at what project_card in FabricBot maps to in GitHubActions
+      pull-requests: write # to set status
     name: Handle ${{ github.event_name }} ${{ github.event.action }} event
     runs-on: ubuntu-latest
     steps:
